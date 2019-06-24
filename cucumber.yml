@@ -1,0 +1,7 @@
+custom: -t @custom_conversions --format html --out report.html --format pretty
+home: -t @home_screen --format html --out report.html --format pretty
+menu: -t @main_menu --format html --out report.html --format pretty
+
+wip: -t @wip --format html --out report.html --format pretty
+any: -t @custom_conversions,@home_screen --format html --out report.html --format pretty
+strict: -t @custom_conversions -t @home_screen --format html --out report.html --format pretty
